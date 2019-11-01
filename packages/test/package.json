@@ -21,7 +21,8 @@
     "url": "git+https://github.com/kuan1/temp.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0  --commit-path '.'"
   },
   "bugs": {
     "url": "https://github.com/kuan1/temp/issues"
