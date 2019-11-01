@@ -2,6 +2,9 @@
   "version": "1.0.0",
   "name": "root",
   "private": true,
+  "scripts": {
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+  },
   "devDependencies": {
     "lerna": "^3.18.3"
   }
