@@ -1,20 +1,8 @@
 {
-  "name": "temp",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kuan1/temp.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kuan1/temp/issues"
-  },
-  "homepage": "https://github.com/kuan1/temp#readme"
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.18.3"
+  }
 }
