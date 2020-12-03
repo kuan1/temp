@@ -12,11 +12,13 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
 
-      - name: build
+      - name: setup-node
         uses: actions/setup-node@v1
         with:
           node-version: '12'
           registry-url: https://registry.npm.taobao.org/
+
+      - name: build
         run: yarn && yarn build
 
       - name: Deploy
