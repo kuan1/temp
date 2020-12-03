@@ -17,8 +17,7 @@ jobs:
           registry-url: https://registry.npm.taobao.org/
 
       - name: build
-        run: yarn
-        run: yarn build
+        run: yarn && yarn build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
