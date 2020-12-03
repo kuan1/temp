@@ -9,14 +9,14 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: build
+      - name: checkout
         uses: actions/checkout@v2
+
+      - name: build
         uses: actions/setup-node@v1
         with:
           node-version: '12'
           registry-url: https://registry.npm.taobao.org/
-
-      - name: build
         run: yarn && yarn build
 
       - name: Deploy
@@ -24,4 +24,6 @@ jobs:
         with:
           github_token: ${{ secrets.repo }}
           publish_dir: ./dist
-          publish_branch: gh-pages  # default: gh-pages
+          publish_branch: gh-pages # default: gh-pages
+  env:
+    TZ: Asia/Shanghai
